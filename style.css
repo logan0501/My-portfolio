@@ -295,13 +295,15 @@ nav >div a:hover{
 .project-dis{
     display: grid;
     margin: 5px;
-    grid-template: repeat(2,1fr)/repeat(5,1fr);
+    padding: 5px;
+    grid-template: repeat(2,1fr)/repeat(4,1fr);
 
 }
 .project-card{
     background-color:rgba(255,255,255,0.05) ;
     margin: 5px;
     border-radius: 10px;
+    max-width: 350px;
 }
 .project-card header{
     text-align: center;
@@ -379,8 +381,128 @@ nav >div a:hover{
 
   .contact{
       background-color: #5E48B4;
-      
+      padding: 30px;
   }
   .contact .contact-head div{
-      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
   }
+  .contact .contact-head div header{
+      font-size: 2rem;
+      color: #AAA5CD;
+  }
+  .contact .contact-head div a{
+    font-size: 2rem;
+    color: white;
+    border-radius: 100%;
+    text-decoration: none;
+}
+
+.contact .contact-head div a:hover{
+ 
+    color: #270B54;
+}
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fab{
+    color: #ff5858;
+    font-size: 2rem;
+    margin: 10px;
+}
+.fab:hover{
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    color: #AAA5CD;
+    background-color: #5E48B4;
+    ;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    nav div{
+    
+    }
+    nav div a{
+        text-decoration: none;
+       
+        font-size: 1rem;
+        
+    }
+    .logan{
+        display: none;
+         
+    }
+    nav >div a:hover{
+    
+       background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
+        transition: 0.5s;
+           background-size: 150% auto;
+           color: white;            
+          
+           border-radius: 10px;
+    }
+    
+    .head-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head-content{
+        text-align: center;
+        padding-top: 80px;
+      
+    }
+    .head-content >h1{
+        font-size: 1.5rem;
+        position: relative;
+        left: 0;
+        
+    }
+    .head-content>h1:first-of-type {
+      
+        font-size: 3rem;
+        position: relative;
+        left: 0%;
+     
+    }
+    .quote{
+        margin: 20px;
+    }
+    .quote span{
+       
+        left: -0%;
+        
+    }
+    .btn{
+    left: 0%;
+	}
+    .btn-arrow-slide-text {
+       
+        top: 35%;
+        left: 0%;
+    }
+    .skills-section{
+        grid-template: repeat(1,1fr)/repeat(1,1fr);
+    }
+    .project-dis{
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        grid-template-columns:100%;
+    }
+}
