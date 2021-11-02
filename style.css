@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+.loader{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg, #0d47a1, #0a2342);
+    background-size: 400% 400%;
+    -webkit-animation: loaderbg 9s ease infinite;
+    -moz-animation: loaderbg 9s ease infinite;
+    animation: loaderbg 9s ease infinite;
+}
+@-webkit-keyframes loaderbg {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-moz-keyframes loaderbg {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@keyframes loaderbg {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+.loader-text{
+    color: whitesmoke;
+}
