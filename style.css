@@ -60,8 +60,8 @@ nav {
     justify-content: space-between;
     padding: 30px;
 }
-nav div{
-
+.mobile-nav{
+    display: none;
 }
 nav div a{
     text-decoration: none;
@@ -84,7 +84,11 @@ nav >div a:hover{
       
        border-radius: 10px;
 }
-
+nav .icon{
+   
+display: none;
+    
+}
 .head-section{
     display: flex;
     flex-direction: row;
@@ -287,6 +291,7 @@ nav >div a:hover{
     font-size: 1.2rem;
     line-height: 35px;
     margin: 20px 10px 20px 0;
+    text-align: justify;
  
 }
 .about-me p:first-of-type{
@@ -349,7 +354,8 @@ nav >div a:hover{
 .project-card p{
    color: white;
    transition: 0.5s;
-   justify-content: center;
+   text-align:justify;
+word-spacing:-2px;
    padding: 10px;
 }
 .project-card p:hover{
@@ -535,31 +541,29 @@ footer{
         padding: 0;
         overflow-x: none;
     }
-    nav  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 5px;
-    }
-  
-    nav div a{
-        text-decoration: none;
-       font-size: 0.7rem;
-        
-    }
+    
+
     .logan{
         display: none;
          
     }
-    nav >div a:hover{
-    
-       background-image: linear-gradient(to right, #f857a6 0%, #ff5858  51%, #f857a6  100%);
-        transition: 0.5s;
-           background-size: 150% auto;
-           color: white;            
-          
-           border-radius: 10px;
+    nav{
+        display: none;
+    }
+    .mobile-nav{
+        
+        padding: 0;
+        backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: #270B54;
+   
+        display: flex;
+        justify-content: flex-end;
+        
+
+    }
+    .mobile-nav img{
+        margin: 10px;
     }
     .svg{
       display: none;
@@ -638,7 +642,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    text-align: justify;
 }
 .about-me header{
     margin: 10px;
@@ -649,7 +653,7 @@ footer{
     font-size: 1.2rem;
 }
 .about-me p{
-    text-align: center;
+    text-align: justify;
     max-width: 50ch;
     font-size: 1rem;
     line-height: 35px;
