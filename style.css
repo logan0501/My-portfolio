@@ -9,28 +9,28 @@ html{
     scroll-behavior: smooth;
 }
 body{
+ 
+    background-color: #270B54;
+    background-image: url("assets/bg-8.png");
+    background-repeat: no-repeat;
+    background-size:cover ;
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    background-image: url("assets/bg-8.png");
-    background-size:cover ;
-    background-color: #270B54;
-    background-repeat: no-repeat;
- 
     width: 100vw;
-    height: 100vh;
 }
 .loader{
+    -moz-animation: loaderbg 9s ease infinite;
+    -webkit-animation: loaderbg 9s ease infinite;
+    align-items: center;
+    animation: loaderbg 9s ease infinite;
+    background-size: 400% 400%;
+    background: linear-gradient(95deg, #0d47a1, #0a2342);
     display: flex;
     height: 100vh;
-    width: 100vw;
-    align-items: center;
     justify-content: center;
-    background: linear-gradient(95deg, #0d47a1, #0a2342);
-    background-size: 400% 400%;
-    -webkit-animation: loaderbg 9s ease infinite;
-    -moz-animation: loaderbg 9s ease infinite;
-    animation: loaderbg 9s ease infinite;
+    width: 100vw;
 }
 @-webkit-keyframes loaderbg {
     0%{background-position:93% 0%}
@@ -103,42 +103,42 @@ display: none;
   
 }
 .head-content >h1{
-    font-size: 1.5rem;
     color: #CB65FF;
-    position: relative;
+    font-size: 1.5rem;
     left: -50%;
-    text-transform: uppercase;
     margin: none;
+    position: relative;
+    text-transform: uppercase;
 }
 .head-content>h1:first-of-type {
-    margin: 10px;
+    color: white;
     font-size: 5rem;
-    position: relative;
     left: -50%;
     margin-top: 30px;
-    color: white;
+    margin: 10px;
+    position: relative;
 }
 .quote{
     margin: 20px;
 }
 .quote span{
-    margin-top: 20px;
     color: #AAA5CD;
-    position: relative;
+    font-size: 1.3rem;
     justify-content: center;
     left: -50%;
-    font-size: 1.3rem;
     letter-spacing: 3px;
+    margin-top: 20px;
+    position: relative;
 }
 
 .btn{
-    left: -80%;
-	display:block;
-	margin:auto;
-	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	position: relative;
 	cursor: pointer;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:auto;
+	position: relative;
+	text-transform: uppercase;
+    left: -80%;
 }
 .btn-box{
 	margin: auto;
@@ -636,7 +636,7 @@ footer{
     }
     
 .about-me {
-    padding: 0px;
+    padding: 5px;
     color: white;
     display: flex;
     flex-direction: column;
